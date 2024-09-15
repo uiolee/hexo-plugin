@@ -1,0 +1,63 @@
+{
+  "name": "hexo-workbox-build",
+  "version": "2.0.1",
+  "description": "A hexo plugin to run workbox build. And provide convenient features of PWA and service worker.",
+  "keywords": [
+    "hexo",
+    "plugin",
+    "hexo-plugin",
+    "workbox",
+    "workbox-build",
+    "PWA",
+    "offline"
+  ],
+  "homepage": "https://github.com/uiolee/hexo-workbox-build",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-workbox-build/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uiolee/hexo-workbox-build.git"
+  },
+  "license": "MPL-2.0",
+  "author": "Uiolee (https://github.com/uiolee)",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "pnpm run tsbf",
+    "check-types": "tsc --noEmit",
+    "esb": "rm -rf dist && node scripts/esb.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters html --coverageReporters text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly --coverageReporters text-summary",
+    "tsb": "tsc -b -v",
+    "tsbf": "tsc -b -v -f",
+    "tsbw": "tsc -b -v -w"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4",
+    "workbox-build": "^7.0.0"
+  },
+  "peerDependencies": {
+    "nunjucks": "^3.2.4",
+    "workbox-build": "^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nunjucks": {
+      "optional": false
+    },
+    "workbox-build": {
+      "optional": false
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

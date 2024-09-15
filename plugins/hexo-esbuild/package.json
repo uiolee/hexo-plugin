@@ -1,0 +1,59 @@
+{
+  "name": "hexo-esbuild",
+  "version": "0.1.0",
+  "description": "Minify JavaScripts, CSS files via esbuild.",
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "plugin",
+    "esbuild",
+    "minify"
+  ],
+  "homepage": "https://github.com/uiolee/hexo-esbuild",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-esbuild/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uiolee/hexo-esbuild.git"
+  },
+  "license": "MPL-2.0",
+  "author": "uiolee (https://github.com/uiolee)",
+  "main": "dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run tsbf",
+    "check-types": "tsc --noEmit",
+    "esb": "rm -rf dist && node scripts/esb.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters html --coverageReporters text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly --coverageReporters text-summary",
+    "tsb": "tsc -b -v",
+    "tsbf": "tsc -b -v -f",
+    "tsbw": "tsc -b -v -w"
+  },
+  "dependencies": {
+    "esbuild": "^0.20.0",
+    "micromatch": "^4.0.5"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.20.0",
+    "micromatch": "^4.0.5"
+  },
+  "peerDependenciesMeta": {
+    "esbuild": {
+      "optional": false
+    },
+    "micromatch": {
+      "optional": false
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

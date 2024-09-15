@@ -1,0 +1,49 @@
+{
+  "name": "hexo-absolute",
+  "version": "1.0.2",
+  "description": "convert relative path to absolute URL for hexo",
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "url",
+    "seo",
+    "html"
+  ],
+  "homepage": "https://github.com/uiolee/hexo-absolute",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-absolute/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uiolee/hexo-absolute.git"
+  },
+  "license": "MPL-2.0",
+  "author": "Uiolee (https://github.com/uiolee)",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters=html text",
+    "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  },
+  "peerDependencies": {
+    "cheerio": "1.0.0-rc.12"
+  },
+  "peerDependenciesMeta": {
+    "cheerio": {
+      "optional": false
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
