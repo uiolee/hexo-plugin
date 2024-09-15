@@ -37,8 +37,6 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
-        with:
-          version: ${{ inputs.pnpm_version }}
 
       - uses: actions/setup-node@v4
         name: Setup Node without cache
