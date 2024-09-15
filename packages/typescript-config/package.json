@@ -1,0 +1,12 @@
+{
+  "name": "tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@tsconfig/node20": "^20.1.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
