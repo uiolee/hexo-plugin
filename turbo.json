@@ -9,7 +9,7 @@
     },
     "lint": {
       "inputs": ["lib", "src", "eslint.config.js"],
-      "dependsOn": ["^lint"]
+      "dependsOn": ["eslint-config#build", "^lint"]
     },
 
     "check-types": {
