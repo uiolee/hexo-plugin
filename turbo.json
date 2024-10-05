@@ -8,13 +8,13 @@
       "outputs": ["dist/**", "build/**"]
     },
     "lint": {
-      "inputs": ["lib", "src", "eslint.config.js"],
-      "dependsOn": ["eslint-config#build", "^lint"]
+      "dependsOn": ["eslint-config#build", "^lint"],
+      "inputs": ["lib", "src", "eslint.config.js"]
     },
 
     "check-types": {
-      "inputs": ["tsconfg.json", "src"],
-      "dependsOn": ["^check-types"]
+      "dependsOn": ["^check-types"],
+      "inputs": ["tsconfg.json", "src"]
     },
     "test": {
       "dependsOn": ["build"],

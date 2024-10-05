@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/base.json",
+  "extends": "typescript-config/base.json",
   "include": ["src"],
   "compilerOptions": {
     "incremental": true /* Save .tsbuildinfo files to allow for incremental compilation of projects. */,
