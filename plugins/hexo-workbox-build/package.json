@@ -31,7 +31,6 @@
   "scripts": {
     "build": "pnpm run tsbf",
     "check-types": "tsc --noEmit",
-    "esb": "rm -rf dist && node scripts/esb.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
