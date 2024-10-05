@@ -63,18 +63,18 @@ module.exports = {
     runtimeCaching: [
 
         {
-            urlPattern: new RegExp(/\.(?:xml|txt|json)$/),
+            urlPattern: new RegExp(/.(?:xml|txt|json)$/),
             handler: 'NetworkOnly',
         },
         {
-            urlPattern: new RegExp(/\.(?:js)$/),
+            urlPattern: new RegExp(/.(?:js)$/),
             handler: 'CacheFirst',
             options: {
                 cacheName: 'js',
             },
         },
         {
-            urlPattern: new RegExp(/\.(?:css)$/),
+            urlPattern: new RegExp(/.(?:css)$/),
             handler: 'CacheFirst',
             options: {
                 cacheName: 'css',
