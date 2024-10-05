@@ -28,7 +28,7 @@ const filter = function (
         resolve(result.code);
       })
       .catch((err) => {
-        console.error(`esbuild error in: `, path, err);
+        console.error(`[esbuild] error in: `, path, err);
         reject(err);
       });
   });
