@@ -9,13 +9,14 @@
     "html",
     "minify"
   ],
-  "homepage": "https://github.com/uiolee/hexo-htmlnano",
+  "homepage": "https://github.com/uiolee/hexo-plugin",
   "bugs": {
-    "url": "https://github.com/uiolee/hexo-htmlnano/issues"
+    "url": "https://github.com/uiolee/hexo-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uiolee/hexo-htmlnano.git"
+    "url": "git+https://github.com/uiolee/hexo-plugin.git",
+    "directory": "plugins/hexo-htmlnano"
   },
   "license": "MPL-2.0",
   "author": "uiolee (https://github.com/uiolee)",

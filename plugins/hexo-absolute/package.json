@@ -9,13 +9,14 @@
     "seo",
     "html"
   ],
-  "homepage": "https://github.com/uiolee/hexo-absolute",
+  "homepage": "https://github.com/uiolee/hexo-plugin",
   "bugs": {
-    "url": "https://github.com/uiolee/hexo-absolute/issues"
+    "url": "https://github.com/uiolee/hexo-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/uiolee/hexo-absolute.git"
+    "url": "git+ssh://git@github.com/uiolee/hexo-plugin.git",
+    "directory": "plugins/hexo-absolute"
   },
   "license": "MPL-2.0",
   "author": "Uiolee (https://github.com/uiolee)",

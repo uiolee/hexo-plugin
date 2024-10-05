@@ -9,13 +9,14 @@
     "esbuild",
     "minify"
   ],
-  "homepage": "https://github.com/uiolee/hexo-esbuild",
+  "homepage": "https://github.com/uiolee/hexo-plugin",
   "bugs": {
-    "url": "https://github.com/uiolee/hexo-esbuild/issues"
+    "url": "https://github.com/uiolee/hexo-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/uiolee/hexo-esbuild.git"
+    "url": "git+ssh://git@github.com/uiolee/hexo-plugin.git",
+    "directory": "plugins/hexo-esbuild"
   },
   "license": "MPL-2.0",
   "author": "uiolee (https://github.com/uiolee)",

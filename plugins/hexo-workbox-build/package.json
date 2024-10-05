@@ -11,13 +11,14 @@
     "PWA",
     "offline"
   ],
-  "homepage": "https://github.com/uiolee/hexo-workbox-build",
+  "homepage": "https://github.com/uiolee/hexo-plugin",
   "bugs": {
-    "url": "https://github.com/uiolee/hexo-workbox-build/issues"
+    "url": "https://github.com/uiolee/hexo-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/uiolee/hexo-workbox-build.git"
+    "url": "git+ssh://git@github.com/uiolee/hexo-plugin.git",
+    "directory": "plugins/hexo-workbox-build"
   },
   "license": "MPL-2.0",
   "author": "Uiolee (https://github.com/uiolee)",
