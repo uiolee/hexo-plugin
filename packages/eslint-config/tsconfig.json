@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "incremental": true /* Save .tsbuildinfo files to allow for incremental compilation of projects. */,
+    "tsBuildInfoFile": "./.tsbuildinfo" /* Specify the path to .tsbuildinfo incremental compilation file. */,
+    "outDir": "./dist" /* Specify an output folder for all emitted files. */
+  }
+}
