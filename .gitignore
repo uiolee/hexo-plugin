@@ -168,3 +168,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+
+*.esbuild.metafile.*
+*.code-workspace
