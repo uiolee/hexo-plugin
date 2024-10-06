@@ -24,8 +24,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
-    "test:cov": "jest --coverage --coverageReporters=html text",
-    "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+    "test:cov": "jest --coverage --coverageReporters html text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary"
   },
   "peerDependencies": {
     "hexo-util": "^3.0||^2.7||>=1.9.1"

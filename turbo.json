@@ -18,8 +18,12 @@
     },
     "test": {
       "dependsOn": ["build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src", "lib"]
+    },
+    "test:lcov": {
+      "dependsOn": ["build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src", "lib"],
-      "outputs": ["dist/**", "build/**"]
+      "outputs": ["coverage/**"]
     },
     "dev": {
       "cache": false,

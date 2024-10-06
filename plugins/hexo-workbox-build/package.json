@@ -34,8 +34,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
-    "test:cov": "jest --coverage --coverageReporters html --coverageReporters text",
-    "test:lcov": "jest --coverage --coverageReporters lcovonly --coverageReporters text-summary",
+    "test:cov": "jest --coverage --coverageReporters html text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary",
     "tsb": "tsc -b -v",
     "tsbf": "tsc -b -v -f",
     "tsbw": "tsc -b -v -w"

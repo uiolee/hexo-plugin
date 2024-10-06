@@ -10,7 +10,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
     "sort": "pnpm -r exec sort-package-json && sort-package-json",
-    "test": "turbo test"
+    "test": "turbo test",
+    "test:lcov": "turbo test:lcov"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.8",

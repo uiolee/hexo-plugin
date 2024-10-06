@@ -29,8 +29,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
-    "test:cov": "jest --coverage --coverageReporters=html text",
-    "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+    "test:cov": "jest --coverage --coverageReporters html text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.12"
