@@ -1,81 +1,31 @@
-# Turborepo starter
+# hexo-plugin
 
-This is an official starter Turborepo.
+[![CI](https://github.com/uiolee/hexo-plugin/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/uiolee/hexo-plugin/actions/workflows/ci.yml)
+[![Release](https://github.com/uiolee/hexo-plugin/actions/workflows/release.yml/badge.svg?branch=main&event=push)](https://github.com/uiolee/hexo-plugin/actions/workflows/release.yml)
+[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-plugin/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-plugin?branch=main)
+[![codecov](https://codecov.io/gh/uiolee/hexo-plugin/graph/badge.svg?token=LEDILDMMKC)](https://codecov.io/gh/uiolee/hexo-plugin)
 
-## Using this example
+Turborepo of uiolee's hexo-plugin
 
-Run the following command:
+## plugins list
 
-```sh
-npx create-turbo@latest
-```
+<!-- packages-list start -->
 
-## What's inside?
+| name                      | path                                                                         | version | deps | npmjs                                                                                                                                        | download                                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------- | ------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| hexo-absolute             | [./plugins/hexo-absolute/](./plugins/hexo-absolute/)                         | 1.0.2   | 1    | [![npm](https://img.shields.io/npm/v/hexo-absolute?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-absolute)                         | [![npm](https://img.shields.io/npm/dm/hexo-absolute?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-absolute)                         |
+| hexo-esbuild              | [./plugins/hexo-esbuild/](./plugins/hexo-esbuild/)                           | 0.1.0   | 2    | [![npm](https://img.shields.io/npm/v/hexo-esbuild?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-esbuild)                           | [![npm](https://img.shields.io/npm/dm/hexo-esbuild?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-esbuild)                           |
+| @uiolee/hexo-htmlnano     | [./plugins/hexo-htmlnano/](./plugins/hexo-htmlnano/)                         | 0.1.2   | 2    | [![npm](https://img.shields.io/npm/v/@uiolee/hexo-htmlnano?logo=npm&label=%20)](https://www.npmjs.com/package/@uiolee/hexo-htmlnano)         | [![npm](https://img.shields.io/npm/dm/@uiolee/hexo-htmlnano?logo=npm&label=%20)](https://www.npmjs.com/package/@uiolee/hexo-htmlnano)         |
+| hexo-symbols-count-time-2 | [./plugins/hexo-symbols-count-time-2/](./plugins/hexo-symbols-count-time-2/) | 2.0.1   | 0    | [![npm](https://img.shields.io/npm/v/hexo-symbols-count-time-2?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-symbols-count-time-2) | [![npm](https://img.shields.io/npm/dm/hexo-symbols-count-time-2?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-symbols-count-time-2) |
+| hexo-workbox-build        | [./plugins/hexo-workbox-build/](./plugins/hexo-workbox-build/)               | 2.0.1   | 2    | [![npm](https://img.shields.io/npm/v/hexo-workbox-build?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-workbox-build)               | [![npm](https://img.shields.io/npm/dm/hexo-workbox-build?logo=npm&label=%20)](https://www.npmjs.com/package/hexo-workbox-build)               |
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+<!-- packages-list end -->
 
 ### Build
 
 To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
+```bash
+cd hexo-plugin
 pnpm build
 ```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
