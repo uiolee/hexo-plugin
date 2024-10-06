@@ -1,13 +1,24 @@
 {
   "name": "hexo-plugin",
+  "version": "0.0.0",
   "private": true,
+  "homepage": "https://github.com/uiolee/hexo-plugin",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uiolee/hexo-plugin.git"
+  },
   "license": "MPL-2.0",
   "author": "uiolee (https://github.com/uiolee)",
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "check-types": "turbo check-types",
+    "clean": "pnpm dlx rimraf -g '**/node_modules' '**/dist' '**/coverage' '**/.turbo' '**/.esbuild.metafile.json' '**/.tsbuildinfo' '**/.temp'",
     "dev": "turbo dev",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{md}\"",
     "lint": "turbo lint",
     "prepack": "echo \"don't run pack/publish in root!\" && exit 1",
     "prepare": "turbo run build -F eslint-config",
@@ -39,6 +50,6 @@
   },
   "packageManager": "pnpm@9.10.0",
   "engines": {
-    "node": ">=20"
+    "node-lts": ">=20"
   }
 }
