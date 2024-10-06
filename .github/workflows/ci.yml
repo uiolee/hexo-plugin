@@ -5,16 +5,27 @@ on:
     branches:
       - "main"
     paths:
-      - "src/**.tsx?"
+      - "{packages,plugins}/*/lib/**"
+      - "{packages,plugins}/*/src/**.tsx?"
+      - "{packages,plugins}/*/test/**"
+      - "{packages,plugins}/*/package.json"
+      - "{packages,plugins}/*/tsconfig.json"
+      - "**/eslint.config.mjs"
+      - "**/jest.config.mjs"
       - "package.json"
-      - "tsconfig.json"
+      - "turbo.json"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
-      - "src/**.tsx?"
-      - "scripts/**"
+      - "{packages,plugins}/*/lib/**"
+      - "{packages,plugins}/*/src/**.tsx?"
+      - "{packages,plugins}/*/test/**"
+      - "{packages,plugins}/*/package.json"
+      - "{packages,plugins}/*/tsconfig.json"
+      - "**/eslint.config.mjs"
+      - "**/jest.config.mjs"
       - "package.json"
-      - "tsconfig.json"
+      - "turbo.json"
       - ".github/workflows/ci.yml"
 
 env:

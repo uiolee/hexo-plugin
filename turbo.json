@@ -9,7 +9,7 @@
     },
     "lint": {
       "dependsOn": ["eslint-config#build", "^lint"],
-      "inputs": ["lib", "src", "eslint.config.js"]
+      "inputs": ["lib", "src", "eslint.config.mjs"]
     },
 
     "check-types": {
@@ -18,7 +18,7 @@
     },
     "test": {
       "dependsOn": ["build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src", "lib"],
       "outputs": ["dist/**", "build/**"]
     },
     "dev": {
