@@ -19,6 +19,7 @@ const filter = function (
     if (path && exclude && exclude.length) {
       if (micromatch.isMatch(path, exclude)) {
         resolve(str);
+        return str;
       }
     }
 

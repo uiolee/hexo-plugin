@@ -36,7 +36,7 @@ describe("filter", () => {
     const testFilePath = "jest.config.mjs";
     return readFile(resolve(testFilePath), { encoding: "utf-8" }).then(
       (str) => {
-        str += "\ninvalid token;";
+        str += "\nskip token;";
         return expect(
           filter.bind({ options: default_options["js"] })(str, {
             path: testFilePath + ".min.js",
