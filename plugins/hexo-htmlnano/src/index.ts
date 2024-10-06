@@ -1,40 +1,30 @@
 import type Hexo from "hexo";
 declare let hexo: Hexo;
 
+import {
+  default_htmlnanoOptions,
+  default_options,
+  default_postHtmlOptions,
+} from "./default_config";
 import { filter } from "./filter";
 
 hexo.config.hexo_htmlnano = hexo.config.hexo_htmlnano || {};
 hexo.config.hexo_htmlnano.htmlnanoOptions = Object.freeze(
   Object.assign(
-    {
-      removeEmptyAttributes: false, // Disable the module "removeEmptyAttributes"
-      collapseWhitespace: "conservative", // Pass options to the module "collapseWhitespace"
-    },
+    default_htmlnanoOptions,
     hexo.config.hexo_htmlnano.htmlnanoOptions,
   ),
 );
 
 hexo.config.hexo_htmlnano.postHtmlOptions = Object.freeze(
   Object.assign(
-    {
-      // sync: false, // https://github.com/posthtml/posthtml#usage
-      // lowerCaseTags: true, // https://github.com/posthtml/posthtml-parser#options
-      // quoteAllAttributes: false, // https://github.com/posthtml/posthtml-render#options
-    },
+    default_postHtmlOptions,
     hexo.config.hexo_htmlnano.postHtmlOptions,
   ),
 );
 
 const options = Object.freeze(
-  Object.assign(
-    {
-      enable: true,
-      priority: 999,
-      exclude: [],
-      presetName: "safe",
-    },
-    hexo.config.hexo_htmlnano,
-  ),
+  Object.assign(default_options, hexo.config.hexo_htmlnano),
 );
 hexo.config.hexo_htmlnano = options;
 
