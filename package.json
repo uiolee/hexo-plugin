@@ -9,7 +9,9 @@
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
+    "prepack": "echo \"don't run pack/publish in root!\" && exit 1",
     "prepare": "turbo run build -F eslint-config",
+    "publish-packages": "turbo run build && changeset publish",
     "sort": "pnpm -r exec sort-package-json && sort-package-json",
     "test": "turbo test",
     "test:lcov": "turbo test:lcov"

@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ".changeset/**.md"
+      - ".github/workflows/release.yml"
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -12,10 +15,19 @@ env:
   default_pnpm_version: "latest"
   artifact_name: build_${{ github.sha }}
 
+permissions:
+  contents: read
+
 jobs:
   release:
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
     name: Release
+    timeout-minutes: 15
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -31,8 +43,37 @@ jobs:
       - name: Install Dependencies
         run: pnpm i
 
-      - name: Create Release Pull Request
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets_action
         uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: "pnpm run publish-packages"
+          commit: "release: Version Packages"
+          title: "release: Version Packages"
+          setupGitUser: true
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Generate SUMMARY
+        env:
+          hasChangesets: ${{steps.changesets_action.outputs.hasChangesets}}
+          pullRequestNumber: ${{steps.changesets_action.outputs.pullRequestNumber}}
+          published: ${{steps.changesets_action.outputs.published}}
+          publishedPackages: ${{steps.changesets_action.outputs.publishedPackages}}
+        run: |
+          echo "## changesets/action" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "|name|value|" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "|hasChangesets|${{env.hasChangesets}}|" >> $GITHUB_STEP_SUMMARY
+          echo "|pullRequestNumber|${{github.repository}}#${{env.pullRequestNumber}}|" >> $GITHUB_STEP_SUMMARY
+          echo "|published|${{env.published}}|" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### published packages:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "${{env.publishedPackages.*.name}}" >> $GITHUB_STEP_SUMMARY
+          echo "${{env.publishedPackages.*.version}}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
