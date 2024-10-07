@@ -139,14 +139,20 @@ jobs:
 
       - name: test
         run: |
-          pnpm run test:lcov
-
-      - name: Upload results to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          pnpm run test:lcov --  --reporters jest-junit summary
 
       - name: Coveralls
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.github_token }}
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }}
+        uses: codecov/test-results-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

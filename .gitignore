@@ -172,3 +172,5 @@ yarn-error.log*
 
 *.esbuild.metafile.*
 *.code-workspace
+
+junit.xml
