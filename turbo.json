@@ -8,21 +8,34 @@
       "outputs": ["dist/**", "build/**"]
     },
     "lint": {
-      "dependsOn": ["eslint-config#build", "^lint"],
+      "dependsOn": ["eslint-config#build"],
       "inputs": ["lib", "src", "eslint.config.mjs"]
     },
 
     "check-types": {
-      "dependsOn": ["^check-types"],
       "inputs": ["tsconfg.json", "src"]
     },
     "test": {
-      "dependsOn": ["build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src", "lib"]
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*",
+        "tsconfg.json",
+        "jest.config.mjs",
+        "src",
+        "lib",
+        "test"
+      ]
     },
     "test:lcov": {
-      "dependsOn": ["build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*", "tsconfg.json", "src", "lib"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*",
+        "tsconfg.json",
+        "jest.config.mjs",
+        "src",
+        "lib",
+        "test"
+      ],
       "outputs": ["coverage/**"]
     },
     "dev": {
