@@ -49,6 +49,7 @@ jobs:
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: "pnpm run publish-packages"
+          version: "pnpm run version-packages"
           commit: "release: Version Packages"
           title: "release: Version Packages"
           setupGitUser: true
@@ -59,21 +60,21 @@ jobs:
 
       - name: Generate SUMMARY
         env:
-          hasChangesets: ${{steps.changesets_action.outputs.hasChangesets}}
-          pullRequestNumber: ${{steps.changesets_action.outputs.pullRequestNumber}}
-          published: ${{steps.changesets_action.outputs.published}}
-          publishedPackages: ${{steps.changesets_action.outputs.publishedPackages}}
+          hasChangesets: ${{ steps.changesets_action.outputs.hasChangesets }}
+          pullRequestNumber: ${{ steps.changesets_action.outputs.pullRequestNumber }}
+          published: ${{ steps.changesets_action.outputs.published }}
+          publishedPackages: ${{ steps.changesets_action.outputs.publishedPackages }}
         run: |
           echo "## changesets/action" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "|name|value|" >> $GITHUB_STEP_SUMMARY
           echo "|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "|hasChangesets|${{env.hasChangesets}}|" >> $GITHUB_STEP_SUMMARY
-          echo "|pullRequestNumber|${{github.repository}}#${{env.pullRequestNumber}}|" >> $GITHUB_STEP_SUMMARY
-          echo "|published|${{env.published}}|" >> $GITHUB_STEP_SUMMARY
+          echo "|hasChangesets|${{ env.hasChangesets }}|" >> $GITHUB_STEP_SUMMARY
+          echo "|pullRequestNumber|${{ github.repository }}#${{ env.pullRequestNumber }}|" >> $GITHUB_STEP_SUMMARY
+          echo "|published|${{ env.published }}|" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### published packages:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "${{env.publishedPackages.*.name}}" >> $GITHUB_STEP_SUMMARY
-          echo "${{env.publishedPackages.*.version}}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ join(env.publishedPackages.*.name, ' | ') }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ join(env.publishedPackages.*.version, ' | ') }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
