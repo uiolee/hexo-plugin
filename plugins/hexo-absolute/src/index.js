@@ -2,7 +2,7 @@
 
 "use strict";
 
-const filterFn = require("./lib/filter");
+const filterFn = require("./filter");
 
 hexo.config.absolute = Object.assign(
   {

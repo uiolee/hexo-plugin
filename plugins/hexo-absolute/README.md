@@ -10,8 +10,6 @@
 
 Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
-Only run when `hexo generate` or `deploy`, won't run when `hexo server`.
-
 ## Install
 
 [![NPM Version](https://img.shields.io/npm/v/hexo-absolute?logo=npm)](https://www.npmjs.com/package/hexo-absolute)

@@ -1,7 +1,7 @@
 "use strict";
 
 const { load } = require("cheerio");
-const absoluteFn = require("../lib/filter");
+const absoluteFn = require("../src/filter");
 
 const defaultCfg = {
   enable: true,
