@@ -1,4 +1,4 @@
-import { js, ts, jest } from "eslint-config/configs";
+import { js, ts, jest } from "eslint-config-uiolee/configs";
 
 export default [
   ...js,

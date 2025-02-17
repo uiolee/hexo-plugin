@@ -8,7 +8,6 @@
       "outputs": ["dist/**", "build/**"]
     },
     "lint": {
-      "dependsOn": ["eslint-config#build"],
       "inputs": ["lib", "src", "eslint.config.mjs"]
     },
 
