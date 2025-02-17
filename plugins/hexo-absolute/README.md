@@ -1,13 +1,5 @@
 # hexo-absolute
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/uiolee/hexo-absolute?logo=github)](https://github.com/uiolee/hexo-absolute/tags)
-[![GitHub Release](https://img.shields.io/github/v/release/uiolee/hexo-absolute?logo=github)](https://github.com/uiolee/hexo-absolute/releases)
-[![GitHub commits since latest release](https://img.shields.io/github/commits-since/uiolee/hexo-absolute/latest?include_prereleases&sort=semver&logo=github)](https://github.com/uiolee/hexo-absolute/compare/...main)
-[![GitHub top language](https://img.shields.io/github/languages/top/uiolee/hexo-absolute?logo=github)](#hexo-absolute)
-[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-absolute/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-absolute?branch=main)
-[![CI](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/uiolee/hexo-absolute?logo=librariesdotio)](https://libraries.io/github/uiolee/hexo-absolute#dependencies)
-
 Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
 ## Install
