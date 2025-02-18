@@ -1,6 +1,6 @@
 {
   "name": "@uiolee/hexo-htmlnano",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minify HTML files with htmlnano",
   "keywords": [
     "hexo",
