@@ -1,5 +1,5 @@
 "use strict";
-const helper = require("../lib/helper");
+const helper = require("../src/helper");
 
 const config = {
   awl: 4,

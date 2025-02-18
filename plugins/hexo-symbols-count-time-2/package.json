@@ -15,10 +15,9 @@
   },
   "license": "LGPL-3.0",
   "author": "Ivan.Nginx <ivan.nginx@gmail.com> (https://almostover.ru)",
-  "main": "index",
+  "main": "src/index.js",
   "files": [
-    "lib",
-    "index.js"
+    "src"
   ],
   "scripts": {
     "lint": "eslint .",

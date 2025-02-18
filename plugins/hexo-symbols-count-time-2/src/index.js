@@ -2,7 +2,7 @@
 "use strict";
 
 const { stripHTML } = require("hexo-util");
-const helper = require("./lib/helper");
+const helper = require("./helper");
 
 const config = Object.assign(
   {
