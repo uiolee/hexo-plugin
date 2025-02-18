@@ -1,13 +1,5 @@
 # hexo-htmlnano
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/uiolee/hexo-htmlnano?logo=github)](https://github.com/uiolee/hexo-htmlnano/tags)
-[![GitHub Release](https://img.shields.io/github/v/release/uiolee/hexo-htmlnano?logo=github)](https://github.com/uiolee/hexo-htmlnano/releases)
-[![GitHub commits since latest release](https://img.shields.io/github/commits-since/uiolee/hexo-htmlnano/latest?include_prereleases&sort=semver&logo=github)](https://github.com/uiolee/hexo-htmlnano/compare/...main)
-[![GitHub top language](https://img.shields.io/github/languages/top/uiolee/hexo-htmlnano?logo=github)](#hexo-htmlnano)
-[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-htmlnano/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-htmlnano?branch=main)
-[![CI](https://github.com/uiolee/hexo-htmlnano/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uiolee/hexo-htmlnano/actions/workflows/ci.yml)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/uiolee/hexo-htmlnano?logo=librariesdotio)](https://libraries.io/github/uiolee/hexo-htmlnano#dependencies)
-
 Minify HTML files with [htmlnano](https://www.npmjs.com/package/htmlnano)
 
 ## Install
