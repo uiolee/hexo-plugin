@@ -1,13 +1,5 @@
 # [hexo-symbols-count-time-2](https://github.com/uiolee/hexo-symbols-count-time-2)
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/uiolee/hexo-symbols-count-time-2?logo=github)](https://github.com/uiolee/hexo-symbols-count-time-2/tags)
-[![GitHub Release](https://img.shields.io/github/v/release/uiolee/hexo-symbols-count-time-2?logo=github)](https://github.com/uiolee/hexo-symbols-count-time-2/releases)
-[![GitHub commits since latest release](https://img.shields.io/github/commits-since/uiolee/hexo-symbols-count-time-2/latest?include_prereleases&sort=semver&logo=github)](https://github.com/uiolee/hexo-symbols-count-time-2/compare/...main)
-[![GitHub top language](https://img.shields.io/github/languages/top/uiolee/hexo-symbols-count-time-2?logo=github)](#hexo-symbols-count-time-2)
-[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-symbols-count-time-2/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-symbols-count-time-2?branch=main)
-[![CI](https://github.com/uiolee/hexo-symbols-count-time-2/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uiolee/hexo-symbols-count-time-2/actions/workflows/ci.yml)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/uiolee/hexo-symbols-count-time-2?logo=librariesdotio)](https://libraries.io/github/uiolee/hexo-symbols-count-time-2#dependencies)
-
 > This a fork of [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
 
 Symbols count and time to read for articles in [Hexo](https://github.com/hexojs/hexo) blog.
@@ -25,12 +17,9 @@ Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) 
 
 ```sh
 pnpm add hexo-symbols-count-time-2
-```
 
-or
-
-```sh
-npm i hexo-symbols-count-time-2
+# or
+# npm i hexo-symbols-count-time-2
 ```
 
 ## Configuration
