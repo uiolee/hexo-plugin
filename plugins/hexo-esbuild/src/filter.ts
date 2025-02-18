@@ -24,12 +24,16 @@ const filter = function (
     }
 
     const { esbuildTransformOptions } = options;
-    transform(str, esbuildTransformOptions)
+    return transform(str, esbuildTransformOptions)
       .then((result) => {
-        resolve(result.code);
+        const res = result.code;
+        console.log(`hexo-esbuild: processed '${path}'`); // TODO: improve log output
+        resolve(res);
+        return res;
       })
       .catch((err) => {
-        console.error(`[esbuild] error in: `, path, err);
+        const msg = `hexo-esbuild: failed in processing '${path}' with "esbuild" error: ${err}`;
+        console.warn(msg);
         reject(err);
       });
   });
