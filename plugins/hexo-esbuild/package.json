@@ -1,7 +1,7 @@
 {
   "name": "hexo-esbuild",
   "version": "1.0.0",
-  "description": "Minify JavaScripts, CSS files via esbuild.",
+  "description": "Transform JavaScript, CSS, TypeScript, and JSX files via esbuild transform API.",
   "keywords": [
     "hexo",
     "hexo-plugin",
