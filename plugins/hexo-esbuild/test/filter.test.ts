@@ -3,46 +3,50 @@ import { resolve } from "path";
 
 import { filter } from "../src/filter";
 import { default_options } from "../src/default_config";
+import { expect } from "@jest/globals";
 
-describe("filter", () => {
-  test("default", () => {
-    const testFilePath = "jest.config.mjs";
-    return readFile(resolve(testFilePath), { encoding: "utf-8" }).then(
-      (str) => {
-        return expect(
-          filter.bind({ options: default_options["js"] })(str, {
-            path: testFilePath,
-          }),
-        ).resolves.not.toBe(str);
-      },
-    );
+describe("hexo-esbuild", () => {
+  let jsStr = "";
+  const filterData = { path: "jest.config.mjs" };
+  let filterArgs = [];
+
+  beforeAll(async () => {
+    jsStr = await readFile(resolve(filterData.path), { encoding: "utf-8" });
   });
 
-  test("throw error", () => {
-    const testFilePath = "jest.config.mjs";
-    return readFile(resolve(testFilePath), { encoding: "utf-8" }).then(
-      (str) => {
-        str += "\ninvalid token;";
-        return expect(
-          filter.bind({ options: default_options["js"] })(str, {
-            path: testFilePath,
-          }),
-        ).rejects.toThrow();
+  beforeEach(() => {
+    filterArgs = [
+      jsStr,
+      {
+        ...filterData,
+        ...{},
       },
-    );
+    ];
   });
 
-  test("skip min.js", () => {
-    const testFilePath = "jest.config.mjs";
-    return readFile(resolve(testFilePath), { encoding: "utf-8" }).then(
-      (str) => {
-        str += "\nskip token;";
-        return expect(
-          filter.bind({ options: default_options["js"] })(str, {
-            path: testFilePath + ".min.js",
-          }),
-        ).resolves.toBe(str);
-      },
-    );
+  test("default - minfy js", () => {
+    return filter
+      .bind({ options: default_options["js"] })(...filterArgs)
+      .then((res) => {
+        expect(res).not.toContain("/** @type");
+        expect(res).not.toContain("default config");
+        expect(res).toContain("../../jest.config.mjs");
+      });
+  });
+
+  test("default - skip *.min.js", () => {
+    filterArgs[1].path = "jest.config.mjs.min.js";
+    return filter
+      .bind({ options: default_options["js"] })(...filterArgs)
+      .then((res) => {
+        expect(res).toBe(jsStr);
+      });
+  });
+
+  test("should throw error", () => {
+    filterArgs = [jsStr + "\ninvalid code for test;\n", filterData];
+    return expect(
+      filter.bind({ options: default_options["js"] })(...filterArgs),
+    ).rejects.toThrow();
   });
 });
