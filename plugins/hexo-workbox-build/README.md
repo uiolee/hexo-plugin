@@ -1,13 +1,5 @@
 # hexo-workbox-build
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/uiolee/hexo-workbox-build?logo=github)](https://github.com/uiolee/hexo-workbox-build/tags)
-[![GitHub Release](https://img.shields.io/github/v/release/uiolee/hexo-workbox-build?logo=github)](https://github.com/uiolee/hexo-workbox-build/releases)
-[![GitHub commits since latest release](https://img.shields.io/github/commits-since/uiolee/hexo-workbox-build/latest?include_prereleases&sort=semver&logo=github)](https://github.com/uiolee/hexo-workbox-build/compare/...main)
-[![GitHub top language](https://img.shields.io/github/languages/top/uiolee/hexo-workbox-build?logo=github)](#hexo-workbox-build)
-[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-workbox-build/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-workbox-build?branch=main)
-[![CI](https://github.com/uiolee/hexo-workbox-build/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uiolee/hexo-workbox-build/actions/workflows/ci.yml)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/uiolee/hexo-workbox-build?logo=librariesdotio)](https://libraries.io/github/uiolee/hexo-workbox-build#dependencies)
-
 A hexo plugin to run [workbox-build](https://www.npmjs.com/package/workbox-build) and provide convenient features of PWA and service worker.
 
 ## Feature
