@@ -36,6 +36,7 @@
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.13.4",
     "@types/nunjucks": "^3.2.6",
+    "cross-env": "^10.1.0",
     "esbuild": "^0.25.0",
     "esbuild-jest2": "^0.6.7",
     "esbuild-register": "^3.6.0",

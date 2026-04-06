@@ -29,9 +29,9 @@
     "check-types": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest",
-    "test:cov": "jest --coverage --coverageReporters html text",
-    "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters html text",
+    "test:lcov": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters lcovonly text-summary",
     "tsb": "tsc -b -v",
     "tsbf": "tsc -b -v -f",
     "tsbw": "tsc -b -v -w"
