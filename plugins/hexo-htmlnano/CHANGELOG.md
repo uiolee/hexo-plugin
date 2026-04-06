@@ -1,5 +1,11 @@
 # @uiolee/hexo-htmlnano
 
+## 2.0.0
+
+### Major Changes
+
+- 8b63de9: chore(deps): bump htmlnano from 2.1.1 to 3.2.0
+
 ## 1.0.1
 
 ### Patch Changes
