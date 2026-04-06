@@ -234,9 +234,12 @@ describe("filter", () => {
   });
 
   test("default", async () => {
-    const res = filter.bind({ config: default_config })(html_str, {
-      path: "test.html",
-    });
+    const res = filter.bind({ config: default_config, log: console })(
+      html_str,
+      {
+        path: "test.html",
+      },
+    );
     await expect(res).resolves.not.toThrow();
     await expect(res).resolves.toContain("Hello");
     await expect(res).resolves.not.toContain("uselesscomment");
@@ -245,7 +248,7 @@ describe("filter", () => {
     default_config.hexo_htmlnano.presetName = "fweioa";
     const res = filter.bind({
       config: default_config,
-      log: { warn: console.warn },
+      log: console,
     })(html_str, {
       path: "test.html",
     });
