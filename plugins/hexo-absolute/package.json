@@ -1,6 +1,6 @@
 {
   "name": "hexo-absolute",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "convert relative path to absolute URL for hexo",
   "keywords": [
     "hexo",
