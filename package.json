@@ -41,7 +41,7 @@
     "esbuild-jest2": "^0.6.7",
     "esbuild-register": "^3.6.0",
     "eslint": "^9.39.4",
-    "eslint-config-uiolee": "^0.2.5",
+    "eslint-config-uiolee": "^0.3.3",
     "hexo": "7.3.0",
     "jest": "^30.4.2",
     "jest-junit": "^17.0.0",
