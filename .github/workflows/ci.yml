@@ -40,7 +40,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         name: Install pnpm
         # with:
         #   version: ${{ env.default_pnpm_version }}
@@ -63,7 +63,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         name: Install pnpm
         # with:
         #   version: ${{ env.default_pnpm_version }}
@@ -97,7 +97,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         name: Install pnpm
         # with:
         #   version: ${{ env.default_pnpm_version }}
@@ -124,7 +124,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         name: Install pnpm
         # with:
         #   version: ${{ env.default_pnpm_version }}
