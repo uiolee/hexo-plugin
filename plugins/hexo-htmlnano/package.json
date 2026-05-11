@@ -9,7 +9,7 @@
     "html",
     "minify"
   ],
-  "homepage": "https://github.com/uiolee/hexo-plugin",
+  "homepage": "https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-htmlnano",
   "bugs": {
     "url": "https://github.com/uiolee/hexo-plugin/issues"
   },
@@ -51,6 +51,9 @@
     "micromatch": {
       "optional": false
     }
+  },
+  "engines": {
+    "node": ">=24"
   },
   "publishConfig": {
     "access": "public",
