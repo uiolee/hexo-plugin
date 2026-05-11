@@ -34,7 +34,7 @@
     "@jest/types": "^30.4.1",
     "@types/jest": "^30.0.0",
     "@types/micromatch": "^4.0.10",
-    "@types/node": "^22.19.18",
+    "@types/node": "^24",
     "@types/nunjucks": "^3.2.6",
     "cross-env": "^10.1.0",
     "esbuild": "^0.25.12",
