@@ -1,5 +1,11 @@
 # @uiolee/hexo-htmlnano
 
+## 3.0.0
+
+### Major Changes
+
+- 12ec3bf: require engines node version >=24
+
 ## 2.0.0
 
 ### Major Changes
