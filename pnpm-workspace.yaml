@@ -2,3 +2,7 @@ packages:
   - "apps/*"
   - "packages/*"
   - "plugins/*"
+allowBuilds:
+  esbuild: true
+  hexo-util: false
+  unrs-resolver: false
