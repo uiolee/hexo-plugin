@@ -27,5 +27,6 @@ To build all apps and packages, run the following command:
 
 ```bash
 cd hexo-plugin
+pnpm i
 pnpm build
 ```

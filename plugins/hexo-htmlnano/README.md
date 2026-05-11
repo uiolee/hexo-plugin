@@ -5,11 +5,7 @@ Minify HTML files with [htmlnano](https://www.npmjs.com/package/htmlnano)
 ## Install
 
 [![NPM Version](https://img.shields.io/npm/v/@uiolee/hexo-htmlnano?logo=npm)](https://www.npmjs.com/package/@uiolee/hexo-htmlnano)
-[![node-lts](https://img.shields.io/node/v-lts/@uiolee/hexo-htmlnano?logo=nodedotjs)](https://nodejs.org/)
-[![NPM License](https://img.shields.io/npm/l/@uiolee/hexo-htmlnano)](./LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dm/@uiolee/hexo-htmlnano?logo=npm)](#hexo-htmlnano)
-[![NPM Downloads](https://img.shields.io/npm/dt/@uiolee/hexo-htmlnano?logo=npm)](#hexo-htmlnano)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@uiolee/hexo-htmlnano?logo=librariesdotio)](https://libraries.io/npm/@uiolee%2Fhexo-htmlnano/tree)
+[![node-lts](https://img.shields.io/node/v-lts/@uiolee/hexo-htmlnano?logo=nodedotjs)](https://nodejs.org/about/previous-releases#release-schedule)
 
 ```bash
 pnpm add @uiolee/hexo-htmlnano

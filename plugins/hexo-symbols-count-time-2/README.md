@@ -9,11 +9,7 @@ Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) 
 ## Installation
 
 [![NPM Version](https://img.shields.io/npm/v/hexo-symbols-count-time-2?logo=npm)](https://www.npmjs.com/package/hexo-symbols-count-time-2)
-[![node-lts](https://img.shields.io/node/v-lts/hexo-symbols-count-time-2?logo=nodedotjs)](https://nodejs.org/)
-[![NPM License](https://img.shields.io/npm/l/hexo-symbols-count-time-2)](./LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dm/hexo-symbols-count-time-2?logo=npm)](#hexo-symbols-count-time-2)
-[![NPM Downloads](https://img.shields.io/npm/dt/hexo-symbols-count-time-2?logo=npm)](#hexo-symbols-count-time-2)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/hexo-symbols-count-time-2?logo=librariesdotio)](https://libraries.io/npm/hexo-symbols-count-time-2/tree)
+[![node-lts](https://img.shields.io/node/v-lts/hexo-symbols-count-time-2?logo=nodedotjs)](https://nodejs.org/about/previous-releases#release-schedule)
 
 ```sh
 pnpm add hexo-symbols-count-time-2

@@ -6,11 +6,7 @@ via [esbuild](https://esbuild.github.io) [Transformer](https://esbuild.github.io
 ## Install
 
 [![NPM Version](https://img.shields.io/npm/v/hexo-esbuild?logo=npm)](https://www.npmjs.com/package/hexo-esbuild)
-[![node-lts](https://img.shields.io/node/v-lts/hexo-esbuild?logo=nodedotjs)](https://nodejs.org/)
-[![NPM License](https://img.shields.io/npm/l/hexo-esbuild)](./LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dm/hexo-esbuild?logo=npm)](#hexo-esbuild)
-[![NPM Downloads](https://img.shields.io/npm/dt/hexo-esbuild?logo=npm)](#hexo-esbuild)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/hexo-esbuild?logo=librariesdotio)](https://libraries.io/npm/hexo-esbuild/tree)
+[![node-lts](https://img.shields.io/node/v-lts/hexo-esbuild?logo=nodedotjs)](https://nodejs.org/about/previous-releases#release-schedule)
 
 ```bash
 pnpm add hexo-esbuild

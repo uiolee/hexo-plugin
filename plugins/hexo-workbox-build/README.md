@@ -17,11 +17,7 @@ You need to know how to use [workbox-build](https://www.npmjs.com/package/workbo
 ## Install
 
 [![NPM Version](https://img.shields.io/npm/v/hexo-workbox-build?logo=npm)](https://www.npmjs.com/package/hexo-workbox-build)
-[![node-lts](https://img.shields.io/node/v-lts/hexo-workbox-build?logo=nodedotjs)](https://nodejs.org/)
-[![NPM License](https://img.shields.io/npm/l/hexo-workbox-build)](./LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dm/hexo-workbox-build?logo=npm)](#hexo-workbox-build)
-[![NPM Downloads](https://img.shields.io/npm/dt/hexo-workbox-build?logo=npm)](#hexo-workbox-build)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/hexo-workbox-build?logo=librariesdotio)](https://libraries.io/npm/hexo-workbox-build/tree)
+[![node-lts](https://img.shields.io/node/v-lts/hexo-workbox-build?logo=nodedotjs)](https://nodejs.org/about/previous-releases#release-schedule)
 
 ```bash
 pnpm add hexo-workbox-build

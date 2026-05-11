@@ -5,11 +5,7 @@ Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 ## Install
 
 [![NPM Version](https://img.shields.io/npm/v/hexo-absolute?logo=npm)](https://www.npmjs.com/package/hexo-absolute)
-[![node-lts](https://img.shields.io/node/v-lts/hexo-absolute?logo=nodedotjs)](https://nodejs.org/)
-[![NPM License](https://img.shields.io/npm/l/hexo-absolute)](./LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dm/hexo-absolute?logo=npm)](#hexo-absolute)
-[![NPM Downloads](https://img.shields.io/npm/dt/hexo-absolute?logo=npm)](#hexo-absolute)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/hexo-absolute?logo=librariesdotio)](https://libraries.io/npm/hexo-absolute/tree)
+[![node-lts](https://img.shields.io/node/v-lts/hexo-absolute?logo=nodedotjs)](https://nodejs.org/about/previous-releases#release-schedule)
 
 ```bash
 pnpm add hexo-absolute
