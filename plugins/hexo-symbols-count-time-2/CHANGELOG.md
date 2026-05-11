@@ -1,5 +1,11 @@
 # hexo-symbols-count-time-2
 
+## 4.0.1
+
+### Patch Changes
+
+- e20290d: chore: update homepage path in package.json
+
 ## 4.0.0
 
 ### Major Changes
