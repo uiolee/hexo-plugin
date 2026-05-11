@@ -8,6 +8,7 @@
     "symbols",
     "time-to-read"
   ],
+  "homepage": "https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-symbols-count-time-2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uiolee/hexo-plugin.git",
