@@ -1,6 +1,6 @@
 {
   "name": "hexo-webmanifest",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generate 'Web Application Manifest' json files and Insert `<link>` tag to HTML.",
   "keywords": [
     "hexo",
