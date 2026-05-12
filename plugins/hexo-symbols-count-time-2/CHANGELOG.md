@@ -1,5 +1,11 @@
 # hexo-symbols-count-time-2
 
+## 5.0.0
+
+### Major Changes
+
+- e3de73e: bump peerDependencies hexo-util to ^4.0
+
 ## 4.0.1
 
 ### Patch Changes
