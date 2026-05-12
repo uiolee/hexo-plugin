@@ -37,7 +37,7 @@
     "tsbw": "tsc -b -v -w"
   },
   "dependencies": {
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.28.0",
     "micromatch": "^4.0.5"
   },
   "peerDependencies": {
