@@ -1,5 +1,11 @@
 # hexo-esbuild
 
+## 3.1.0
+
+### Minor Changes
+
+- b89f6b6: bump esbuild ^0.28.0
+
 ## 3.0.0
 
 ### Major Changes
