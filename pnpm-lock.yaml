@@ -108,6 +108,8 @@ importers:
         specifier: ^3.0||^2.7||>=1.9.1
         version: 3.3.0
 
+  plugins/hexo-webmanifest: {}
+
   plugins/hexo-workbox-build:
     dependencies:
       nunjucks:

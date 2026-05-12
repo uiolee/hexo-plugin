@@ -1,0 +1,53 @@
+{
+  "name": "hexo-webmanifest",
+  "version": "0.1.0",
+  "description": "Generate 'Web Application Manifest' json files and Insert `<link>` tag to HTML.",
+  "keywords": [
+    "hexo",
+    "plugin",
+    "hexo-plugin",
+    "hexo-generator",
+    "hexo-injector",
+    "webmanifest",
+    ".webmanifest",
+    "json",
+    "manifest",
+    "Web Application Manifest",
+    "PWA"
+  ],
+  "homepage": "https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-webmanifest",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-plugin/issues?q=state%3Aopen%20label%3Ahexo-webmanifest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uiolee/hexo-plugin.git",
+    "directory": "plugins/hexo-webmanifest"
+  },
+  "license": "MPL-2.0",
+  "author": "Uiolee (https://github.com/uiolee)",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run tsbf",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters html text",
+    "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary",
+    "tsb": "tsc -b -v",
+    "tsbf": "tsc -b -v -f",
+    "tsbw": "tsc -b -v -w"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
