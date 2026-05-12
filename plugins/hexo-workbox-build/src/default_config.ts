@@ -13,13 +13,6 @@ const defaultOptions = {
   REG_injector: true,
   REG_injectorNjkString:
     '<script defer src="{{ REG_registerScriptDest }}"></script>',
-
-  MF_copyManifestJsonSrc: "",
-  MF_copyManifestJsonDest: "",
-
-  MF_injector: false,
-  MF_injectorNjkString:
-    '<link rel="manifest" href="{{ MF_copyManifestJsonDest }}" />',
 };
 const defaultConfigs = {
   hexo_workbox_build: defaultOptions,

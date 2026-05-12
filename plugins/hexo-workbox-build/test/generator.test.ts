@@ -13,33 +13,6 @@ beforeAll(() => {
 afterAll(() => {
   //   return rm(".temp", { recursive: true, force: true });
 });
-describe("manifestJsonGen", () => {
-  let options: DefaultOptions = { ...defaultOptions };
-  let configs: DefaultConfigs = { hexo_workbox_build: options };
-  beforeEach(() => {
-    options = { ...defaultOptions };
-    configs = { hexo_workbox_build: options };
-    options.enable = true;
-  });
-  test("default options", () => {
-    const res = generator.manifestJsonGen.bind({ config: configs })();
-    return expect(res).rejects.toThrow();
-  });
-  test("enable", async () => {
-    options.MF_copyManifestJsonSrc = ".temp/manifest.test.json";
-    options.MF_copyManifestJsonDest = ".temp/manifest.dest.json";
-    const data = { name: "testManifest" };
-    return writeFile(
-      options.MF_copyManifestJsonSrc,
-      JSON.stringify(data, null, 2),
-      { encoding: "utf-8" },
-    ).then(async () => {
-      const res = await generator.manifestJsonGen.bind({ config: configs })();
-      expect(res.path).toBe(options.MF_copyManifestJsonDest);
-      expect(JSON.parse(res.data).name).toBe(data.name);
-    });
-  });
-});
 
 describe("registerScriptGen", () => {
   let options: DefaultOptions = { ...defaultOptions };

@@ -4,15 +4,6 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { renderString } from "nunjucks";
 
-async function manifestJsonGen(this: Hexo, locals: object): Promise<object> {
-  const options: DefaultOptions = this.config.hexo_workbox_build;
-  const { MF_copyManifestJsonSrc, MF_copyManifestJsonDest } = options;
-
-  return await readFile(MF_copyManifestJsonSrc, "utf8").then((data) => {
-    return { path: MF_copyManifestJsonDest, data };
-  });
-}
-
 async function registerScriptGen(this: Hexo, locals: object): Promise<unknown> {
   const url_for = this.extend.helper.get("url_for").bind(this);
   const options: DefaultOptions = this.config.hexo_workbox_build;
@@ -32,4 +23,4 @@ async function registerScriptGen(this: Hexo, locals: object): Promise<unknown> {
   });
 }
 
-export { manifestJsonGen, registerScriptGen };
+export { registerScriptGen };

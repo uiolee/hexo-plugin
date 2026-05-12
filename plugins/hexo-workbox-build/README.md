@@ -7,12 +7,10 @@ A hexo plugin to run [workbox-build](https://www.npmjs.com/package/workbox-build
 - run [workbox-build](https://www.npmjs.com/package/workbox-build) via passing through your custom options. ([generateSW mode](https://developer.chrome.com/docs/workbox/modules/workbox-build#generatesw_mode) or [injectManifest mode](https://developer.chrome.com/docs/workbox/modules/workbox-build#injectmanifest_mode))
 - generate the script which using to register service-worker.
 - reference the register script into html.
-- copy `manifest.json` from custom path to `public\`.
-- reference the `manifest.json` via `<link>` tag in html.
 
 This plugin doesn't provide PWA support ready out of the box.
 
-You need to know how to use [workbox-build](https://www.npmjs.com/package/workbox-build), configurate workbox strategy and custom your `manifest.json`.
+You need to know how to use [workbox-build](https://www.npmjs.com/package/workbox-build), configurate workbox strategy.
 
 ## Install
 
@@ -44,12 +42,6 @@ hexo_workbox_build:
 
   REG_injector: true
   REG_injectorNjkString: '<script defer src="{{ REG_registerScriptDest }}"></script>'
-
-  MF_copyManifestJsonSrc: ""
-  MF_copyManifestJsonDest: ""
-
-  MF_injector: false
-  MF_injectorNjkString: '<link rel="manifest" href="{{ MF_cpoyManifestJsonDest }}" />'
 ```
 
 ### Example Configuration
@@ -69,12 +61,6 @@ hexo_workbox_build:
 
   REG_injector: true
   # REG_injectorNjkString: '<script defer src="{{ REG_registerScriptDest }}"></script>'
-
-  MF_copyManifestJsonSrc: "workbox/manifest.json"
-  MF_copyManifestJsonDest: "manifest.json"
-
-  MF_injector: false
-  # MF_injectorNjkString: '<link rel="manifest" href="{{ MF_cpoyManifestJsonDest }}" />'
 ```
 
 ---
@@ -122,25 +108,3 @@ hexo_workbox_build:
 | `REG_injectorNjkString` | string     | `<script defer src="{{ REG_registerScriptDest }}"></script>` | Custom the `<scripts>` string.                                                                                                  |
 
 ---
-
-### related to `manifest.json`
-
-#### copy your `manifest.json` into `public`
-
-> If set both `MF_copyManifestJsonSrc` and `MF_copyManifestJsonDest`, [`hexo-workbox-build`](https://github.com/uiolee/hexo-workbox-build/) will copy your `manifest.json` to `public` dir.
-
-> In fact, you can simply put your `manifest.json` in `source/` dir without using this above feature.
-
-| option name               | value type | default value | note                                                                         |
-| ------------------------- | ---------- | ------------- | ---------------------------------------------------------------------------- |
-| `MF_copyManifestJsonSrc`  | string     | ""            | Specify the path of your `manifest.json`. (relative to your hexo dir)        |
-| `MF_copyManifestJsonDest` | string     | ""            | Specify the destiny path of your `manifest.json`. (relative to `public` dir) |
-
-#### insert a `<link>` ref to your `manifest.json`
-
-> some themes likes next have the same feature, you may not to use this if you enable this feature in themes.
-
-| option name            | value type | default value                                                  | note                                                                                                                                                    |
-| ---------------------- | ---------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `MF_injector`          | boolean    | `false`                                                        | need `MF_copyManifestJsonDest`.<br>control whether to Inject `<link>` tag into head of html.<br>You can use `MF_injectorNjkString` option to custom it. |
-| `MF_injectorNjkString` | string     | `<link rel="manifest" href="{{ MF_cpoyManifestJsonDest }}" />` | custom the `<link>` string.                                                                                                                             |

@@ -2,8 +2,8 @@ import type Hexo from "hexo";
 declare let hexo: Hexo;
 
 import { defaultOptions } from "./default_config";
-import { MF_injector, REG_injector } from "./inject";
-import { manifestJsonGen, registerScriptGen } from "./generator";
+import { REG_injector } from "./inject";
+import { registerScriptGen } from "./generator";
 import { buildWorkboxFn } from "./buildWorkbox";
 
 const options: typeof defaultOptions = Object.freeze(
@@ -28,18 +28,6 @@ if (
     hexo.extend.injector.register(
       "body_end",
       REG_injector(options, hexo),
-      "default",
-    );
-  }
-
-  if (options.MF_copyManifestJsonSrc && options.MF_copyManifestJsonDest) {
-    hexo.extend.generator.register("copy_manifest_json", manifestJsonGen);
-  }
-
-  if (options.MF_injector && options.MF_copyManifestJsonDest) {
-    hexo.extend.injector.register(
-      "head_end",
-      MF_injector(options, hexo),
       "default",
     );
   }
