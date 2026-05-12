@@ -28,7 +28,7 @@
     "test:lcov": "jest --coverage --coverageReporters lcovonly text-summary"
   },
   "peerDependencies": {
-    "hexo-util": "^3.0||^2.7||>=1.9.1"
+    "hexo-util": "^4.0||^3.0||^2.7||>=1.9.1"
   },
   "peerDependenciesMeta": {
     "hexo-util": {
