@@ -69,9 +69,9 @@ hexo_workbox_build:
 
 ### enable or disable this plugin
 
-| option name | value type | default value | note                                                                                             |
-| ----------- | ---------- | ------------- | ------------------------------------------------------------------------------------------------ |
-| `enbale`    | boolean    | `false`       | Control whether to enable [`hexo-workbox-build`](https://github.com/uiolee/hexo-workbox-build/). |
+| option name | value type | default value | note                                                                                                                          |
+| ----------- | ---------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `enbale`    | boolean    | `false`       | Control whether to enable [`hexo-workbox-build`](https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-workbox-build). |
 
 ---
 
@@ -86,7 +86,7 @@ hexo_workbox_build:
 
 > Note: `injectmanifest-mode` depend on a built `sw.js`.
 >
-> It means you need to run `generatesw-mode` first in [`hexo-workbox-build`](https://github.com/uiolee/hexo-workbox-build/).
+> It means you need to run `generatesw-mode` first in [`hexo-workbox-build`](https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-workbox-build).
 
 ---
 
