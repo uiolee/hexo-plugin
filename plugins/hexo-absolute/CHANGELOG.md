@@ -1,5 +1,11 @@
 # hexo-absolute
 
+## 4.1.0
+
+### Minor Changes
+
+- 858f250: bump cheerio ^1.0.0
+
 ## 4.0.0
 
 ### Major Changes
