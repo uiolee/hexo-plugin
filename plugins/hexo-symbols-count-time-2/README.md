@@ -1,4 +1,4 @@
-# [hexo-symbols-count-time-2](https://github.com/uiolee/hexo-symbols-count-time-2)
+# [hexo-symbols-count-time-2](https://github.com/uiolee/hexo-plugin/tree/main/plugins/hexo-symbols-count-time-2)
 
 > This a fork of [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
 
